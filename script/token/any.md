@@ -13,7 +13,7 @@ any <语句1> || [语句2] || [语句3] ...
 any语句当后续的所有语句中有一条语句返回值为true时就会返回true，例如
 
 ```
-all true && false
+any true || false
 ```
 
 将会返回true

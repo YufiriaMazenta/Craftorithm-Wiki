@@ -17,7 +17,3 @@ description: 插件动作系统的介绍
 {% content-ref url="crafting_table.md" %}
 [crafting\_table.md](crafting\_table.md)
 {% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
