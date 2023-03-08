@@ -31,3 +31,15 @@ description: 如何将本插件安装到服务器
 1. 从以上链接下载本插件
 2. 将其放入服务端的plugins目录
 3. 重启服务端
+
+## 从0.2.x版本OasisRecipe迁移到本插件
+
+1. 删除原OasisRecipe插件jar文件
+2. 将Craftorithm和OasisRecipeUpdater插件放入plugins文件夹
+3. 重启服务端
+4. 输入命令/oru
+5. 迁移完成
+
+{% hint style="info" %}
+注意：暂不支持迁移0.2.x版本的随机烧炼配方，如有需要请自行迁移。
+{% endhint %}
