@@ -59,9 +59,9 @@ multiple: true
 source:
   - block: furnace
     item: bedrock
-  - block: smoking
+  - block: smoker
     item: bedrock
-  - block: blasting
+  - block: blast
     item: bedrock
 exp: 10
 time: 100
