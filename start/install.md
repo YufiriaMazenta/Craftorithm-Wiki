@@ -12,7 +12,7 @@ description: 如何将本插件安装到服务器
 
 1. 从Github Releases下载本插件的最新发布版（推荐）
 2. 从MCBBS下载本插件的最新发布版
-3. 从Github Actions下载本插件的最新构建版（可能会存在未完成的特性，不推荐）
+3. 从Github Actions下载本插件的构建版
 
 {% embed url="https://github.com/YufiriaMazenta/Craftorithm/releases" %}
 从Gihub Releases下载
@@ -25,6 +25,10 @@ description: 如何将本插件安装到服务器
 {% embed url="https://github.com/YufiriaMazenta/Craftorithm/actions" %}
 从Github Actions下载
 {% endembed %}
+
+{% hint style="info" %}
+注意：在Github Actions中，分为正式版、beta版、dev版，其中dev版为开发过程中版本，可能会存在未完成的功能；beta版为测试版，通常功能是完成的，但未经严格测试；正式版和发行版本无差别。
+{% endhint %}
 
 ## 安装
 
