@@ -27,7 +27,7 @@ description: 如何将本插件安装到服务器
 {% endembed %}
 
 {% hint style="info" %}
-注意：在Github Actions中，分为正式版、beta版、dev版，其中dev版为开发过程中版本，可能会存在未完成的功能；beta版为测试版，通常功能是完成的，但未经严格测试；正式版和发行版本无差别。
+注意：在Github Actions中，分为正式版、beta版和dev版三种版本，其中dev版为开发过程中版本，可能会存在未完成的功能；beta版为测试版，通常功能是完成的，但未经严格测试；正式版和发行版本无差别。
 {% endhint %}
 
 ## 安装

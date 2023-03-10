@@ -20,7 +20,7 @@
 * [锻造配方](recipe/smithing.md)
 * [切石机配方](recipe/stone\_cutting.md)
 * [随机烧炼配方](recipe/random\_cooking.md)
-* [铁砧配方](recipe/tie-zhen-pei-fang.md)
+* [铁砧配方](recipe/anvil.md)
 
 ## 动作系统 <a href="#script" id="script"></a>
 
