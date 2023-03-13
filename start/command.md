@@ -14,6 +14,7 @@ description: 插件的命令解释
   * remove
   * version
   * run
+  * look
 
 ## 详细说明
 
@@ -78,3 +79,11 @@ description: 插件的命令解释
 * 参数详解
   * \<action\_line>为一条动作语句，中间可以使用空格
 
+```
+/craft look [recipe_key]
+例：/craft look craftorithm:example_shaped
+```
+
+* 用途：查看配方列表/单独查看某配方
+* 参数详解
+  * \[recipe\_key]为配方的key。格式为"\<namespace>:\<name>"，一般情况下，原版配方的命名空间是"minecraft"，而插件添加的配方的命名空间为插件名字的全小写。本插件添加的配方的\<name>一般为配方文件的文件名。
