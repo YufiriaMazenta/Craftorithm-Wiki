@@ -25,3 +25,5 @@ Craftorithm是一款基于BukkitAPI开发的合成管理插件，支持1.13\~1.1
 
 QQ群：861403628
 
+Discord：[https://discord.gg/kpaDxU2RyV](https://discord.gg/kpaDxU2RyV)
+
