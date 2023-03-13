@@ -24,6 +24,7 @@ description: 插件的命令解释
 
 ```
 /craft item save <namespace> <item_name>
+权限：craftorithm.command.item
 例：/craft item save example_item test_save
 ```
 
@@ -34,6 +35,7 @@ description: 插件的命令解释
 
 ```
 /craft item give <namespace>:<item_name> [player_name]
+权限：craftorithm.command.item
 例：/craft item give example_item:example_item YufiriaMazenta
 ```
 
@@ -45,6 +47,7 @@ description: 插件的命令解释
 
 ```
 /craft reload
+权限：craftorithm.command.reload
 ```
 
 * 用途：重载插件的配置文件
@@ -57,6 +60,7 @@ description: 插件的命令解释
 
 ```
 /craft remove <recipe_key>
+权限：craftorithm.command.remove
 例：/craft remove craftorithm:example_shaped
 ```
 
@@ -66,12 +70,14 @@ description: 插件的命令解释
 
 ```
 /craft version
+权限：craftorithm.command.version
 ```
 
 * 用途：查看当前运行的插件版本
 
 ```
 /craft run <action_line>
+权限：craftorithm.command.run
 例：/craft run example
 ```
 
@@ -81,6 +87,7 @@ description: 插件的命令解释
 
 ```
 /craft look [recipe_key]
+权限：craftorithm.command.look
 例：/craft look craftorithm:example_shaped
 ```
 
