@@ -15,6 +15,7 @@ description: 插件的命令解释
   * version
   * run
   * look
+  * create
 
 ## 详细说明
 
@@ -94,3 +95,13 @@ description: 插件的命令解释
 * 用途：查看配方列表/单独查看某配方
 * 参数详解
   * \[recipe\_key]为配方的key。格式为"\<namespace>:\<name>"，一般情况下，原版配方的命名空间是"minecraft"，而插件添加的配方的命名空间为插件名字的全小写。本插件添加的配方的\<name>一般为配方文件的文件名。
+
+<pre><code><strong>/craft create &#x3C;recipe_type> &#x3C;recipe_name>
+</strong>权限：craftorithm.command.create
+例：/craft create shaped test/shaped
+</code></pre>
+
+* 用途：通过GUI在游戏内添加配方
+* 参数详解：
+  * \<recipe\_type>为配方类型，目前支持通过GUI创建的配方有“有序(shaped)”、“无序(shapeless)”、“烧炼(cooking)”、“锻造(smithing)”、“切石(stone\_cutting)”这些。
+  * \<recipe\_name>为配方名字，只支持小写英文字母、数字、"\_"、"/"、"."、"-"。
