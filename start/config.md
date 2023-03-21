@@ -26,6 +26,7 @@ enable_anvil_recipe: true
 {% endtab %}
 
 {% tab title="lang.yml" %}
+````yaml
 ```yaml
 prefix: '&8[&3Craftorithm&8]'
 unsupported_version: '<prefix> 不支持的版本'
@@ -53,9 +54,46 @@ command:
     not_exist: '<prefix> &c配方不存在'
   version: '<prefix> &a插件版本：<version>'
   create:
-    not_exist_type: '<prefix> &c不存在的配方类型'
+    unsupported_recipe_type: '<prefix> &c不支持的配方类型'
+    unsupported_recipe_name: '<prefix> &c不支持的配方名字，只能使用[a-z0-9/._-]+允许的内容'
+    null_result: '<prefix> &c配方结果不允许为空！'
+    success: '<prefix> &a<recipe_type>类型配方<recipe_name>创建成功'
   run_arcenciel:
     success: '<prefix> &a运行成功，耗时<time>ms'
+  look:
+    not_exist_recipe: '<prefix> &c不存在的配方'
+
+menu:
+  recipe_list:
+    title: '&3&l新增配方列表'
+    icon:
+      frame: '&3&l新增配方列表'
+      previous: '&a上一页'
+      next: '&a下一页'
+  recipe_display:
+    title:
+      shaped: 有序配方
+      shapeless: 无序配方
+      furnace: 熔炉配方
+      blasting: 高炉配方
+      smoking: 烟熏炉配方
+      campfire: 营火配方
+      smithing: 锻造配方
+      stone_cutting: 切石配方
+      anvil: 铁砧配方
+  recipe_creator:
+    title: '&3创建<recipe_type>配方: <recipe_name>'
+    icon:
+      frame: ''
+      result_frame: '&a配方结果'
+      confirm: '&3&l确认创建'
+      cooking_frame: '&a烧炼物品'
+      smithing_frame: '&a锻造物品'
+      furnace_toggle: '&a熔炉配方'
+      blasting_toggle: '&a高炉配方'
+      smoking_toggle: '&a烟熏炉配方'
+      campfire_toggle: '&a营火配方'
+
 
 #Arcenciel脚本的提示消息
 arcenciel:
@@ -72,6 +110,7 @@ load:
   points_success: '<prefix> &a发现点券插件,已挂钩'
   points_failed: '<prefix> &c未发现点券插件,点券检查将不会生效'
 ```
+````
 {% endtab %}
 
 {% tab title="function.yml" %}
