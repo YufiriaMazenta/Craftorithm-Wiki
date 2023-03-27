@@ -4,6 +4,10 @@ description: 使用命令/craft create <recipe_type> <recipe_name>打开配方�
 
 # 通过GUI创建配方
 
+{% hint style="info" %}
+注意：GUI创建配方处于早期阶段，只支持简单的配方创建功能，并不建议使用。如果需要更完善的插件体验，请您学着通过编写配置文件来新建配方。
+{% endhint %}
+
 ## 有序配方
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

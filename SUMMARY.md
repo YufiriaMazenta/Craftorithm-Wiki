@@ -21,6 +21,7 @@
 * [切石机配方](recipe/stone\_cutting.md)
 * [随机烧炼配方](recipe/random\_cooking.md)
 * [铁砧配方](recipe/anvil.md)
+* [在配方中使用物品Tag](recipe/item-tag.md)
 * [通过GUI创建配方](recipe/tong-guo-gui-chuang-jian-pei-fang.md)
 
 ## 动作系统 <a href="#script" id="script"></a>
