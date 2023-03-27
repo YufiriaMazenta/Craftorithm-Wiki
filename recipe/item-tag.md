@@ -20,3 +20,11 @@ source:
 ```
 
 此时，配方的第三行支持所有类型的木板作为合成材料使用。
+
+{% hint style="info" %}
+服务端中的所有Tag：
+
+[https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Tag.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Tag.html)
+
+[https://bukkit.windit.net/javadoc/org/bukkit/Tag.html](https://bukkit.windit.net/javadoc/org/bukkit/Tag.html)
+{% endhint %}
