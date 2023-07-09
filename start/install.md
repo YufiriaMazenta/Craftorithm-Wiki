@@ -37,8 +37,9 @@ description: 如何将本插件安装到服务器
 ## 安装
 
 1. 从以上链接下载本插件
-2. 将其放入服务端的plugins目录
-3. 重启服务端
+2. 对于1.4.0及以上版本的插件，还需要安装前置插件ParettiaLib，下载链接[https://github.com/YufiriaMazenta/ParettiaLib/actions](https://github.com/YufiriaMazenta/ParettiaLib/actions)
+3. 将其放入服务端的plugins目录
+4. 重启服务端
 
 ## 从0.2.x版本OasisRecipe迁移到本插件
 
