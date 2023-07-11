@@ -6,7 +6,7 @@ description: 欢迎您使用Craftorithm！
 
 ## 简介
 
-Craftorithm是一款基于BukkitAPI开发的合成管理插件，支持1.13\~1.19.4版本
+Craftorithm是一款基于BukkitAPI开发的合成管理插件，支持1.13\~1.20.1版本
 
 ## 特性
 
