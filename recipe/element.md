@@ -12,7 +12,7 @@ description: 一个插件定义的配方应该由哪些配置项构成
 
 所有的配方都有的配置项
 
-<table><thead><tr><th>配置项</th><th>数据类型</th><th>解释</th><th data-type="checkbox">是否必须</th></tr></thead><tbody><tr><td>type</td><td>String</td><td>配方的类型，规定一个配方应该是什么类型的，若没有配置此项，则默认按有序配方进行解析</td><td>false</td></tr><tr><td>result</td><td>String</td><td>配方的结果，除切石机配方外，所有的配方都只能有一种结果</td><td>true</td></tr><tr><td>unlock</td><td>Boolean</td><td>是否自动为玩家在合成之书中解锁此配方，此处配置优先级高于config.yml中的all_recipe_unlocked配置项，若没有配置此项，默认为上述全局配置项</td><td>false</td></tr><tr><td>source</td><td>复杂类型</td><td>配方的合成物品，不同的配方有不同的编写格式</td><td>true</td></tr><tr><td>multiple</td><td>Boolean</td><td>规定此配方是否有多种合成方式，默认为false</td><td>false</td></tr></tbody></table>
+<table><thead><tr><th>配置项</th><th width="117">数据类型</th><th width="339">解释</th><th data-type="checkbox">是否必须</th></tr></thead><tbody><tr><td>type</td><td>String</td><td>配方的类型，规定一个配方应该是什么类型的，若没有配置此项，则默认按有序配方进行解析</td><td>false</td></tr><tr><td>result</td><td>String</td><td>配方的结果，除切石机配方外，所有的配方都只能有一种结果</td><td>true</td></tr><tr><td>unlock</td><td>Boolean</td><td>是否自动为玩家在合成之书中解锁此配方，此处配置优先级高于config.yml中的all_recipe_unlocked配置项，若没有配置此项，默认为上述全局配置项</td><td>false</td></tr><tr><td>source</td><td>复杂类型</td><td>配方的合成物品，不同的配方有不同的编写格式</td><td>true</td></tr><tr><td>multiple</td><td>Boolean</td><td>规定此配方是否有多种合成方式，默认为false</td><td>false</td></tr><tr><td>sort_id</td><td>Integer</td><td>决定此配方在配方展示页面的排序，数值越大越靠后</td><td>false</td></tr></tbody></table>
 
 ## 私有配置项
 
