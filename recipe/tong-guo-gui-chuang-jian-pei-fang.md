@@ -39,3 +39,9 @@ description: 使用命令/craft create <recipe_type> <recipe_name>打开配方�
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 通过GUI创建切石机配方会创建一个多对多的配方，即上面每一个物品都可以切成下面任意一个物品。上方一行空位放置切制物品，下方一行空位放置切制结果。放置完毕后点击中间的切石机即可完成创建。
+
+## 酿造配方
+
+<figure><img src="../.gitbook/assets/image (6).png" alt="" width="530"><figcaption></figcaption></figure>
+
+左侧放输入物品，即酿造台下面三个槽位的物品，中间放原料，即酿造台最上面的物品，右侧放结果，即酿造完毕产出的物品。放置完毕后，点击最下方的酿造台即可完成创建。

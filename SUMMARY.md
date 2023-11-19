@@ -20,7 +20,7 @@
 * [锻造配方](recipe/smithing.md)
 * [切石机配方](recipe/stone\_cutting.md)
 * [随机烧炼配方](recipe/random\_cooking.md)
-* [铁砧配方](recipe/anvil.md)
+* [酿造配方](recipe/potion.md)
 * [在配方中使用物品Tag](recipe/item-tag.md)
 * [在配方中使用其他插件的物品](recipe/user-other-plugins-item.md)
 * [通过GUI创建配方](recipe/tong-guo-gui-chuang-jian-pei-fang.md)
