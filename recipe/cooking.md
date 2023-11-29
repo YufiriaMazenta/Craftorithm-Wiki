@@ -6,7 +6,7 @@ description: 定义一个烧炼配方
 
 ## 烧炼配方的类型
 
-烧炼配方一共有四种类型，分别为熔炉（furnace）、高炉（blast）、烟熏炉（smoker）和营火（campfire）
+烧炼配方一共有四种类型，分别为熔炉（furnace）、高炉（blast\_furnace）、烟熏炉（smoker）和营火（campfire）
 
 ## 合成物品的配置格式
 
@@ -57,7 +57,7 @@ source:
     item: command_block
   - block: campfire
     item: command_block
-  - block: blast
+  - block: blast_furnace
     item: command_block
 exp: 10
 time: 200
@@ -78,7 +78,7 @@ source:
     item: command_block
   - block: campfire
     item: command_block
-  - block: blast
+  - block: blast_furnace
     item: command_block
 exp: 10
 time: 200
@@ -115,7 +115,7 @@ source:
     item: command_block
   - block: campfire
     item: command_block
-  - block: blast
+  - block: blast_furnace
     item: command_block
 exp: 10
 time: 200
