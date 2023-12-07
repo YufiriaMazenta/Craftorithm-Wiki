@@ -1,6 +1,6 @@
 # 在配方中使用其他插件的物品
 
-目前插件支持从ItemsAdder、Oraxen和MythicMobs获取物品，格式如下：
+目前插件支持从ItemsAdder、Oraxen、NeigeItems和MythicMobs获取物品，格式如下：
 
 使用ItemsAdder的物品：
 
@@ -18,6 +18,12 @@
 
 ```
 'mythic_mobs:<item_name>'
+```
+
+使用NeigeItems的物品
+
+```
+'neige_items:<item_name>'
 ```
 
 示例：
