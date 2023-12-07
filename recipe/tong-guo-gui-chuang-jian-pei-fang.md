@@ -30,7 +30,7 @@ description: 使用命令/craft create <recipe_type> <recipe_name>打开配方�
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-右侧第一个空位放置第一个物品，第二个空位空位放置第二个物品，右侧绿色玻璃板包围的空位放置合成结果。放置完毕后点击中间的锻造台即可完成创建。
+左侧第一个空位放置第一个物品，第二个空位空位放置第二个物品，右侧绿色玻璃板包围的空位放置合成结果。放置完毕后点击中间的锻造台即可完成创建。
 
 当版本高于1.20时，左侧第一个空位放置模板物品，第二个空位放置第一个物品，第三个空位放置第二个物品。
 
@@ -42,6 +42,12 @@ description: 使用命令/craft create <recipe_type> <recipe_name>打开配方�
 
 ## 酿造配方
 
-<figure><img src="../.gitbook/assets/image (6).png" alt="" width="530"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt="" width="522"><figcaption></figcaption></figure>
 
-左侧放输入物品，即酿造台下面三个槽位的物品，中间放原料，即酿造台最上面的物品，右侧放结果，即酿造完毕产出的物品。放置完毕后，点击最下方的酿造台即可完成创建。
+蓝色面板左侧放输入物品，即酿造台下面三个槽位的物品，蓝色面板右侧放原料，即酿造台最上面的物品，绿色面板放结果，即酿造完毕产出的物品。放置完毕后，点击最下方的酿造台即可完成创建。
+
+## 铁砧配方
+
+<figure><img src="../.gitbook/assets/image (7).png" alt="" width="518"><figcaption></figcaption></figure>
+
+蓝色面板左侧放第一个物品，右侧放第二个物品，绿色面板放结果，最下方的命名牌控制是否保留第一个物品的NBT。放置完毕后，点击铁砧即可完成创建

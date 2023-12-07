@@ -9,8 +9,6 @@ description: Craftorithm生成的默认配置文件
 {% tabs %}
 {% tab title="config.yml" %}
 ```yaml
-#插件版本，涉及到自动更新config.yml内容，一般情况下请勿改动
-version: 1.0.0
 #是否开启版本更新检查
 check_update: true
 #是否移除所有的原版配方
@@ -52,20 +50,32 @@ command:
   remove:
     success: '<prefix> &a配方删除成功'
     not_exist: '<prefix> &c配方不存在'
+  disable:
+    success: '<prefix> &c禁用配方成功'
+    not_exist: '<prefix> &c配方不存在或已经被禁用'
+    failed: '<prefix> &c配方禁用失败，可能已被禁用或不存在'
   version: '<prefix> &a插件版本：<version>'
   create:
     unsupported_recipe_type: '<prefix> &c不支持的配方类型'
     unsupported_recipe_name: '<prefix> &c不支持的配方名字，只能使用[a-z0-9/._-]+允许的内容'
+    name_used: '<prefix> &c配方ID已经被使用'
     null_result: '<prefix> &c配方结果不允许为空！'
+    null_source: '<prefix> &c配方原料不允许为空！'
     success: '<prefix> &a<recipe_type>类型配方<recipe_name>创建成功'
   run_arcenciel:
     success: '<prefix> &a运行成功，耗时<time>ms'
-  look:
-    not_exist_recipe: '<prefix> &c不存在的配方'
+  list:
+    unsupported_version: '<prefix> &c此功能只在1.16及以上版本可用'
 
 menu:
   recipe_list:
-    title: '&3&l新增配方列表'
+    title: '&3&l配方列表'
+    icon:
+      frame: '&3&l配方列表'
+      previous: '&a上一页'
+      next: '&a下一页'
+  new_recipe_list:
+    title: '&3&lCraftorithm新增配方列表'
     icon:
       frame: '&3&l新增配方列表'
       previous: '&a上一页'
@@ -80,15 +90,19 @@ menu:
       campfire: 营火配方
       smithing: 锻造配方
       stone_cutting: 切石配方
+      potion: 酿造配方
       anvil: 铁砧配方
   recipe_creator:
     title: '&3创建<recipe_type>配方: <recipe_name>'
     icon:
-      frame: ''
+      frame: '&a创建配方'
       result_frame: '&a配方结果'
       confirm: '&3&l确认创建'
-      cooking_frame: '&a烧炼物品'
+      cooking_frame: '&a烧炼原料'
       smithing_frame: '&a锻造物品'
+      potion_frame: '&a酿造原料'
+      anvil_frame: '&a打造原料'
+      anvil_copy_nbt_toggle: '&a是否保留物品NBT'
       furnace_toggle: '&a熔炉配方'
       blasting_toggle: '&a高炉配方'
       smoking_toggle: '&a烟熏炉配方'
@@ -105,10 +119,9 @@ load:
   finish: '<prefix> &a插件加载完毕'
   recipe_load_exception: '<prefix> &c加载配方<recipe_name>时出现错误'
   item_load_exception: '<prefix> &c加载物品<item_name>时出现错误'
-  vault_success: '<prefix> &a发现经济插件,已挂钩'
-  vault_failed: '<prefix> &c未发现经济插件,金钱检查将不会生效'
-  points_success: '<prefix> &a发现点券插件,已挂钩'
-  points_failed: '<prefix> &c未发现点券插件,点券检查将不会生效'
+  hook_plugin:
+    success: '<prefix> &a发现<plugin>，已挂钩'
+    not_exist: '<prefix> &c未发现<plugin>'
 ```
 ````
 {% endtab %}
