@@ -24,7 +24,6 @@ enable_anvil_recipe: true
 {% endtab %}
 
 {% tab title="lang.yml" %}
-````yaml
 ```yaml
 prefix: '&8[&3Craftorithm&8]'
 unsupported_version: '<prefix> 不支持的版本'
@@ -123,7 +122,6 @@ load:
     success: '<prefix> &a发现<plugin>，已挂钩'
     not_exist: '<prefix> &c未发现<plugin>'
 ```
-````
 {% endtab %}
 
 {% tab title="function.yml" %}
