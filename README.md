@@ -1,5 +1,5 @@
 ---
-description: 欢迎您使用Craftorithm！
+description: 感谢您使用Craftorithm！
 ---
 
 # Craftorithm
