@@ -88,12 +88,12 @@ description: 插件的命令解释
   * \<action\_line>为一条动作语句，中间可以使用空格
 
 ```
-/craft list [craftorithm/others]
+/craft list [craftorithm/server]
 权限：craftorithm.command.list
 例：/craft list
 ```
 
-* 用途：查看新增配方列表/查看其他插件或者原版的配方
+* 用途：查看新增配方列表/查看服务器现有配方
 * 参数详解
 
 <pre><code><strong>/craft create &#x3C;recipe_type> &#x3C;recipe_name>
