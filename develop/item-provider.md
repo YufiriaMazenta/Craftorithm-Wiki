@@ -12,7 +12,7 @@ Craftorithm的物品系统暴露了一个名为ItemProvider的接口，通过此
 
 ### 使用方式
 
-首先，你需要有一个实现`com.github.yufiriamazenta.craftorithm.item.ItemProvider`接口的类，其有三个方法，分别为namespace()、getItemName()和getItem()。
+首先，你需要有一个实现`com.github.yufiriamazenta.craftorithm.item.ItemProvider`接口的类，此接口需要实现三个方法，分别为namespace()、getItemName()和getItem()。
 
 namespace方法需要返回你的物品提供类的命名空间。对于相同命名空间的物品提供者，后注册者将会覆盖先注册者。
 
