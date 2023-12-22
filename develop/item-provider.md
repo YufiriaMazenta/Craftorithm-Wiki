@@ -20,6 +20,6 @@ getItemName方法接受两个参数，一个是ItemStack，一个是boolean，�
 
 getItem方法接受一个参数，为String类型，其为物品的名字，此方法无需处理物品的数量问题，只需要按照名字返回物品即可。
 
-实现完接口后，你还需要手动注册物品提供者，使用`com.github.yufiriamazenta.craftorithm.item.ItemManager`提供的regProvider方法即可注册。
+实现完接口后，你还需要手动注册物品提供者，使用`com.github.yufiriamazenta.craftorithm.item.ItemManager`提供的regItemProvider方法即可注册。
 
 此时，插件将可以使用`命名空间:id`的格式来读取你的物品，同时使用GUI创建配方时也能够自动识别到你的物品ID。
