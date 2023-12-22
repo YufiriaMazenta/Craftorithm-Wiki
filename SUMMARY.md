@@ -48,3 +48,7 @@
   * [Return](script/token/return.md)
 * [进阶](script/enchance/README.md)
   * [函数](script/enchance/function.md)
+
+## 开发者相关 <a href="#develop" id="develop"></a>
+
+* [物品提供者](develop/item-provider.md)
