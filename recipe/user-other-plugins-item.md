@@ -26,6 +26,12 @@
 'neige_items:<item_name>'
 ```
 
+使用MMOItems的物品
+
+```
+'mmoitems:<item_name>'
+```
+
 示例：
 
 ```yaml
