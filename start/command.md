@@ -24,11 +24,14 @@ description: 插件的命令解释
 在此文中，尖括号"<"、">"包含的参数为必须参数，方括号"\["、"]"包含的参数为可选参数
 {% endhint %}
 
-```
-/craft item save <namespace> <item_name>
-权限：craftorithm.command.item
+{% hint style="info" %}
+所有命令都需要有craftorithm.command权限才能使用
+{% endhint %}
+
+<pre><code><strong>/craft item save &#x3C;namespace> &#x3C;item_name>
+</strong>权限：craftorithm.command.item
 例：/craft item save example_item test_save
-```
+</code></pre>
 
 * 用途：将手上的物品保存到配置文件中
 * 参数详解
