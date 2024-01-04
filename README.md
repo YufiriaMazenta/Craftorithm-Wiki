@@ -6,7 +6,7 @@ description: 感谢您使用Craftorithm！
 
 ## 简介
 
-Craftorithm是一款基于BukkitAPI开发的合成管理插件，支持1.13\~1.20.4版本
+Craftorithm是一款基于BukkitAPI开发的合成管理插件，支持1.13\~1.20.4版本的spigot衍生端，包括folia。
 
 ## 特性
 
