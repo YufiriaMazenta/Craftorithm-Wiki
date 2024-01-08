@@ -11,6 +11,7 @@
 
 * [配置构成](item/element.md)
 * [物品的保存与使用](item/usage.md)
+* [自定义燃料](item/custom-fuel.md)
 
 ## 配方编写 <a href="#recipe" id="recipe"></a>
 

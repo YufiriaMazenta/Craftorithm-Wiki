@@ -10,11 +10,16 @@ description: 插件的命令解释
   * item
     * save
     * give
+    * fuel
+      * add
+      * remove
   * reload
   * remove
   * version
   * run
   * list
+    * server
+    * craftorithm
   * create
   * disable
 
@@ -49,6 +54,24 @@ description: 插件的命令解释
   * \<namespace>为物品的命名空间，一般情况下为物品所在的配置文件名
   * \<item\_name>为物品的名字
   * \[player\_name]为给予的玩家名字，可选项，如果没有此参数，则默认给予命令执行者
+
+```
+/craft item fuel add <time>
+权限：craftorithm.command.item.fuel和craftorithm.command.item.fuel.add
+```
+
+* 用途：添加一个自定义燃料
+* 参数详解
+  * \<time>是此燃料可烧炼的时间，单位为tick，20tick等于一秒
+
+```
+/craft item fuel remove <name>
+权限：craftorithm.command.item.fuel和craftorithm.command.item.fuel.remove
+```
+
+* 用途：删除一个自定义燃料
+* 参数详解
+  * \<name>是自定义燃料的名字
 
 ```
 /craft reload
@@ -90,14 +113,15 @@ description: 插件的命令解释
 * 参数详解
   * \<action\_line>为一条动作语句，中间可以使用空格
 
-```
-/craft list [craftorithm/server]
-权限：craftorithm.command.list
-例：/craft list
-```
+<pre><code>/craft list [craftorithm/server]
+<strong>权限：craftorithm.command.list和
+</strong><strong>craftorithm.command.list.craftorithm或craftorithm.command.list.server
+</strong>例：/craft list
+</code></pre>
 
 * 用途：查看新增配方列表/查看服务器现有配方
 * 参数详解
+  * 当不填写参数时，默认执行参数为craftorithm的子命令
 
 <pre><code><strong>/craft create &#x3C;recipe_type> &#x3C;recipe_name>
 </strong>权限：craftorithm.command.create
