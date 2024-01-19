@@ -11,19 +11,19 @@ description: 定义一个随机烧炼配方
 ```yaml
 type: random_cooking
 result:
-  - '<item> <概率>'
-  - '<item> <概率>'
-  - '<item> <概率>'
+  - '<item> <权重>'
+  - '<item> <权重>'
+  - '<item> <权重>'
   ...
 source:
   block: <block>
   item: <item>
 ```
 
-和普通烧炼配方唯一的不同在于result配置项的不同。需要指定物品和概率，概率的总和不能超过1.0，超过1.0的部分将不会生效，若总和小于1.0，剩余的部分将补全空气物品。普通熔炉的配置项都可以在此处生效。
+和普通烧炼配方唯一的不同在于result配置项的不同。需要指定物品和权重，权重会影响物品的出率，权重越高，概率越高；物品的抽出概率等于其权重占权重总和的比例。
 
 {% hint style="info" %}
-注意：物品概率的配置推荐按照概率从高到低配置，原因是插件会默认注册第一个物品的配方到服务器中，如果玩家留第一个物品在熔炉里，将永远产出相同的物品。
+注意：物品概率的配置推荐按照概率从高到低配置，原因是插件会默认注册第一个物品的配方到服务器中，由于熔炉本身的限制，如果玩家留第一个物品在熔炉里，其他结果将无法正常烧出，将永远产出相同的物品。
 {% endhint %}
 
 {% hint style="info" %}
@@ -37,9 +37,9 @@ source:
 ```yaml
 type: random_cooking
 result:
-  - 'iron_ingot 0.8'
-  - 'diamond 0.05'
-  - 'copper_ingot 0.15'
+  - 'iron_ingot 80'
+  - 'diamond 5'
+  - 'copper_ingot 15'
 source:
   block: furnace
   item: bedrock
@@ -52,9 +52,9 @@ time: 100
 ```yaml
 type: random_cooking
 result:
-  - 'iron_ingot 0.8'
-  - 'diamond 0.05'
-  - 'copper_ingot 0.15'
+  - 'iron_ingot 80'
+  - 'diamond 5'
+  - 'copper_ingot 15'
 multiple: true
 source:
   - block: furnace
