@@ -2,11 +2,11 @@
 description: 插件的命令解释
 ---
 
-# 命令
+# 命令和权限
 
 ## 命令结构
 
-* /craftorithm | /craft
+* /craftorithm | /craft | /cra
   * item
     * save
     * give
@@ -23,6 +23,14 @@ description: 插件的命令解释
   * create
   * disable
 
+## 权限表
+
+<table><thead><tr><th width="339">权限</th><th>作用</th><th width="100" align="center">默认</th></tr></thead><tbody><tr><td>craftorithm.command</td><td>使用命令/craftorithm | /craft | /cra</td><td align="center">op</td></tr><tr><td>craftorithm.command.item</td><td>使用命令/cra item</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.give</td><td>使用命令/cra item give</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.save</td><td>使用命令/cra item save</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel</td><td>使用命令/cra item fuel</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel.remove</td><td>使用命令/cra item fuel remove</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel.add</td><td>使用命令/cra item fuel add</td><td align="center">op</td></tr><tr><td>craftorithm.command.create</td><td>使用命令/cra create</td><td align="center">op</td></tr><tr><td>craftorithm.command.disable</td><td>使用命令/cra disable</td><td align="center">op</td></tr><tr><td>craftorithm.command.list</td><td>使用命令/cra list</td><td align="center">op</td></tr><tr><td>craftorithm.command.list.server</td><td>使用命令/cra list server</td><td align="center">op</td></tr><tr><td>craftorithm.command.list.craftorithm</td><td>使用命令/cra list craftorithm</td><td align="center">op</td></tr><tr><td>craftorithm.command.remove</td><td>使用命令/cra remove</td><td align="center">op</td></tr><tr><td>craftorithm.command.reload</td><td>使用命令/cra reload</td><td align="center">op</td></tr><tr><td>craftorithm.command.run</td><td>使用命令/cra run</td><td align="center">op</td></tr><tr><td>craftorithm.command.version</td><td>使用命令/cra version</td><td align="center">op</td></tr><tr><td>craftorithm.edit_recipe</td><td>进入配方编辑页面</td><td align="center">op</td></tr></tbody></table>
+
+{% hint style="info" %}
+由于/cra list命令在没有参数的情况下默认执行/cra list craftorithm，所以需要craftorithm.command.list和craftorithm.command.list.craftorithm两个权限才能正常使用/cra list命令
+{% endhint %}
+
 ## 详细说明
 
 {% hint style="info" %}
@@ -34,7 +42,7 @@ description: 插件的命令解释
 {% endhint %}
 
 <pre><code><strong>/craft item save &#x3C;namespace> &#x3C;item_name>
-</strong>权限：craftorithm.command.item
+</strong>权限：craftorithm.command.item和craftorithm.command.item.save
 例：/craft item save example_item test_save
 </code></pre>
 
@@ -45,7 +53,7 @@ description: 插件的命令解释
 
 ```
 /craft item give <namespace>:<item_name> [player_name]
-权限：craftorithm.command.item
+权限：craftorithm.command.item和craftorithm.command.item.give
 例：/craft item give example_item:example_item YufiriaMazenta
 ```
 

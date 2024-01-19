@@ -4,7 +4,7 @@
 * [开始](start/README.md)
   * [安装](start/install.md)
   * [默认配置](start/config.md)
-  * [命令](start/command.md)
+  * [命令和权限](start/command.md)
   * [本地化](start/localization.md)
 
 ## 物品系统 <a href="#item" id="item"></a>
