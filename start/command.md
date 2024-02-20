@@ -22,10 +22,11 @@ description: 插件的命令解释
     * craftorithm
   * create
   * disable
+  * display
 
 ## 权限表
 
-<table><thead><tr><th width="339">权限</th><th>作用</th><th width="100" align="center">默认</th></tr></thead><tbody><tr><td>craftorithm.command</td><td>使用命令/craftorithm | /craft | /cra</td><td align="center">op</td></tr><tr><td>craftorithm.command.item</td><td>使用命令/cra item</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.give</td><td>使用命令/cra item give</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.save</td><td>使用命令/cra item save</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel</td><td>使用命令/cra item fuel</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel.remove</td><td>使用命令/cra item fuel remove</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel.add</td><td>使用命令/cra item fuel add</td><td align="center">op</td></tr><tr><td>craftorithm.command.create</td><td>使用命令/cra create</td><td align="center">op</td></tr><tr><td>craftorithm.command.disable</td><td>使用命令/cra disable</td><td align="center">op</td></tr><tr><td>craftorithm.command.list</td><td>使用命令/cra list</td><td align="center">op</td></tr><tr><td>craftorithm.command.list.server</td><td>使用命令/cra list server</td><td align="center">op</td></tr><tr><td>craftorithm.command.list.craftorithm</td><td>使用命令/cra list craftorithm</td><td align="center">op</td></tr><tr><td>craftorithm.command.remove</td><td>使用命令/cra remove</td><td align="center">op</td></tr><tr><td>craftorithm.command.reload</td><td>使用命令/cra reload</td><td align="center">op</td></tr><tr><td>craftorithm.command.run</td><td>使用命令/cra run</td><td align="center">op</td></tr><tr><td>craftorithm.command.version</td><td>使用命令/cra version</td><td align="center">op</td></tr><tr><td>craftorithm.edit_recipe</td><td>进入配方编辑页面</td><td align="center">op</td></tr></tbody></table>
+<table><thead><tr><th width="339">权限</th><th>作用</th><th width="100" align="center">默认</th></tr></thead><tbody><tr><td>craftorithm.command</td><td>使用命令/craftorithm | /craft | /cra</td><td align="center">op</td></tr><tr><td>craftorithm.command.item</td><td>使用命令/cra item</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.give</td><td>使用命令/cra item give</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.save</td><td>使用命令/cra item save</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel</td><td>使用命令/cra item fuel</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel.remove</td><td>使用命令/cra item fuel remove</td><td align="center">op</td></tr><tr><td>craftorithm.command.item.fuel.add</td><td>使用命令/cra item fuel add</td><td align="center">op</td></tr><tr><td>craftorithm.command.create</td><td>使用命令/cra create</td><td align="center">op</td></tr><tr><td>craftorithm.command.disable</td><td>使用命令/cra disable</td><td align="center">op</td></tr><tr><td>craftorithm.command.list</td><td>使用命令/cra list</td><td align="center">op</td></tr><tr><td>craftorithm.command.list.server</td><td>使用命令/cra list server</td><td align="center">op</td></tr><tr><td>craftorithm.command.list.craftorithm</td><td>使用命令/cra list craftorithm</td><td align="center">op</td></tr><tr><td>craftorithm.command.remove</td><td>使用命令/cra remove</td><td align="center">op</td></tr><tr><td>craftorithm.command.reload</td><td>使用命令/cra reload</td><td align="center">op</td></tr><tr><td>craftorithm.command.run</td><td>使用命令/cra run</td><td align="center">op</td></tr><tr><td>craftorithm.command.version</td><td>使用命令/cra version</td><td align="center">op</td></tr><tr><td>craftorithm.command.display</td><td>使用命令/cra display</td><td align="center">op</td></tr><tr><td>craftorithm.edit_recipe</td><td>进入配方编辑页面</td><td align="center">op</td></tr></tbody></table>
 
 {% hint style="info" %}
 由于/cra list命令在没有参数的情况下默认执行/cra list craftorithm，所以需要craftorithm.command.list和craftorithm.command.list.craftorithm两个权限才能正常使用/cra list命令
@@ -146,5 +147,13 @@ description: 插件的命令解释
 ```
 
 * 用途：禁用原版或其他插件的配方
+* 参数详解：
+  * \<recipe\_key>为配方的key。格式为"\<namespace>:\<name>"，一般情况下，原版配方的命名空间是"minecraft"，而插件添加的配方的命名空间为插件名字的全小写。
+
+```
+/craft display <recipe_key>
+```
+
+* 用途：打开查看配方合成方式的GUI
 * 参数详解：
   * \<recipe\_key>为配方的key。格式为"\<namespace>:\<name>"，一般情况下，原版配方的命名空间是"minecraft"，而插件添加的配方的命名空间为插件名字的全小写。
