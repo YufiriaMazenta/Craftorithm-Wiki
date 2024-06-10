@@ -91,7 +91,7 @@ time: 200
 ### 单个合成方式的配方
 
 ```yaml
-type: cookingy
+type: cooking
 result: bedrock
 source:
   block: furnace
