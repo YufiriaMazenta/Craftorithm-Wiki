@@ -4,7 +4,7 @@ description: 物品提供源用于Craftorithm获取你提供的物品
 
 # 物品提供源
 
-Craftorithm的物品系统暴露了一个名为ItemProvider的接口，通过此接口，你可以让Craftorithm读取你的插件提供的物品，而可以做到在你的NBT有变动的情况下可以自动更新配方的物品。效果如下：
+Craftorithm的物品系统提供了一个名为ItemProvider的接口，通过此接口，你可以让Craftorithm读取你的插件提供的物品，而可以做到在你的NBT有变动的情况下可以自动更新配方的物品。效果如下：
 
 {% embed url="https://yufiriamazenta.gitbook.io/craftorithm-wiki/recipe/user-other-plugins-item" %}
 

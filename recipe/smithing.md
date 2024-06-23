@@ -75,6 +75,24 @@ source:
     template: diamond
 ```
 
+## 是否保留原材料NBT
+
+当此配置为true时，合成结果的NBT/组件将复制原材料的NBT；当为false时，合成结果的NBT/组件将为设置时的物品
+
+#### 配置示例
+
+```yaml
+type: smithing
+result: bedrock
+multiple: true
+source:
+  base: 'command_block'
+  addition: 'command_block'
+  type: 'transform'
+  template: 'diamond'
+  copy_nbt: true
+```
+
 ## 完整的配置文件示例
 
 ### 单个合成方式的配方
