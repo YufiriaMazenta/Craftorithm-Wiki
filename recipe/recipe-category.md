@@ -4,6 +4,10 @@ description: 配方分类会决定配方在玩家配方书中所属的选项卡
 
 # 配方分类
 
+{% hint style="info" %}
+注意：配方分类仅在1.10.0以上版本插件可用
+{% endhint %}
+
 ## 工作台配方（有序、无序）
 
 工作台配方中，配方类型可为building（建筑方块）、redstone（红石）、equipment（工具）和misc（物品）
@@ -14,7 +18,7 @@ description: 配方分类会决定配方在玩家配方书中所属的选项卡
 
 ## 编写格式
 
-```
+```yaml
 category: <配方分类>
 ```
 
