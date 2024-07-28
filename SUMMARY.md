@@ -6,6 +6,7 @@
   * [默认配置](start/config.md)
   * [命令和权限](start/command.md)
   * [本地化](start/localization.md)
+  * [升级Craftorithm版本](start/update-craftorithm.md)
 
 ## 物品系统 <a href="#item" id="item"></a>
 
